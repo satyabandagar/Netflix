@@ -7,17 +7,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 .nav .logo{
     width: 20vw;
+    margin-left: 100px;
 }
 .nav .logo img{
-     width: 20vw;
+     width: 12vw;
     height: 20vw;
+     margin-left: 100px;
+    
 }
 
 body{
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/37372b0c-16ef-4614-9c66-f0464ffe4136/web/IN-en-20260216-TRIFECTA-perspective_74aa38a5-f527-417e-a604-a039567a350b_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @font-face {

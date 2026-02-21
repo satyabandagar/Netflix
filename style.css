@@ -7,26 +7,146 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    height: 90px;   
 }
-.nav .logo{
-    width: 20vw;
-    margin-left: 100px;
+.logo{
+    width: 15vw;
+    margin-left: 150px;
 }
-.nav .logo img{
-     width: 12vw;
-    height: 20vw;
-     margin-left: 100px;
-    
+.logo img{
+    width: 9vw;
+    height: 9vw;
+}
+.nav .btn{
+  display: flex;
+  gap: 20px;
+  margin-right: 150px;
+}
+.btn-li{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 35px;
+    border: 0.1px solid rgba(255, 255, 255, 0.638);
+    background-color: rgba(0, 0, 0, 0.597);
+}
+.btn-li select{
+    width: 140px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.014);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    margin: 10px;
+}
+.btn-li select option{
+     width: 140px;
+    height: 35px;
+    color: black;
+}
+.btn-li i{
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.sign{
+    width: 90px;
+    height: 35px;
+    border: none;
+}
+.sign button{
+     width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(217, 0, 0);
+    color: white;
+    font-weight: 600;
 }
 
-body{
-    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/37372b0c-16ef-4614-9c66-f0464ffe4136/web/IN-en-20260216-TRIFECTA-perspective_74aa38a5-f527-417e-a604-a039567a350b_large.jpg");
-    background-repeat: no-repeat;
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(0, 0, 0, 0.503) 20%,
+            rgba(0,0,0,0.8) 100%
+        ),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/37372b0c-16ef-4614-9c66-f0464ffe4136/web/IN-en-20260216-TRIFECTA-perspective_74aa38a5-f527-417e-a604-a039567a350b_large.jpg");
+
     background-size: cover;
 }
 
 @font-face {
     font-family:"hend font";
     src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2");
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.cont h1{
+    font-size: 55px;
+    font-family: "hend font";
+}
+.cont h6{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: "hend font";
+}
+.cont p{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main form{
+    display: flex;
+    gap: 10px;
+}
+form input{
+    width: 400px;
+    height: 60px;
+    background-color: rgba(34, 34, 34, 0.571);
+    padding: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 0.3px solid rgba(255, 255, 255, 0.688);
+}
+form input:hover{
+    border: 0.5px solid white;
+}
+form button{
+   width: 200px;
+    height: 60px; 
+    background-color: rgb(219, 1, 1);
+    color: white;
+    font-size: 23px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+form button i{
+    rotate: calc(270deg);
 }
